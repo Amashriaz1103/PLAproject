@@ -1,21 +1,18 @@
-import React from 'React'
-import {Outlet,Link} from 'react-router-dom'
+import React from 'react';
+import { Outlet, Link } from 'react-router-dom';
 
-const Navbar = () => {
-    return(
-        <div>
-            <h1> Dashboard</h1>
-            <Outlet />{/*Child component will be rendered here*/}
-            <nav>
-                <ul>
-                <li><Link to= "/">Home</Link></li>
-                <li><Link to= "/dasboard">Dashboard</Link></li>
-                </ul>
-            
-            </nav>
-        </div>
+const Dashboard = () => {
+  return (
+    <div>
+      <h2>Dashboard</h2>
+      <ul>
         
-    );
+        <li><Link to="profile">Profile</Link></li>
+        <li><Link to="settings">Settings</Link></li>
+      </ul>
+      <Outlet /> 
+    </div>
+  );
 };
 
-export default Dasborad
+export default Dashboard;

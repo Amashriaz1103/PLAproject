@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './component/Navbar/Navbar';
+import Navbar from './screens/Navbar/Navbar';
 import Home from './screens/Home/Home';
-import Dashboard from './screens/Dashboard/Dashboard';
+import Dasboard from './screens/Dashboard/Dashboard';
 import Profile from './screens/Profile/Profile';
-import Setting from './screens/Setting/Setting';
+import Setting from './screens/Settings/Setting';
 
 function App() {
   return (
